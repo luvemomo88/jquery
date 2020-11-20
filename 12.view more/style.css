@@ -16,6 +16,23 @@ a {
   color: inherit;
 }
 
+.gnb {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+}
+
+.gnb li {
+  padding: 2rem;
+  cursor: pointer;
+}
+
+main {
+  width: 800px;
+  margin: ;
+}
+
 h1 {
   text-align: center;
   margin: 3rem 0;

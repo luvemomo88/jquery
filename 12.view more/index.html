@@ -14,60 +14,23 @@
   </head>
   <body>
     <div class="container">
-      <h1>view more</h1>
-
-      <ul class="list">
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-      </ul>
-      <button id="btn">더보기</button>
-    </div>
+      <header class="header"></header>
+      <h1>Sticky Menu</h1>
+      
 
     <script>
-      var list = $(".list")
-      var btn = $("#btn")
-
-      list.find("li").slice(0, 9).show()
-
-      btn.on("click", function () {
-        list.find("li:hidden").slice(0, 9).show()
-
-        if (list.find("li:hidden").length <= 0) {
-          btn.hide()
+      var nav = $('#nav')
+      var navoffsetValue = nav.offset().top
+      
+      $(window).scroll(function(){
+        var scrollTopValue = $(document).scrollTop()
+        if(scrollTopValue > navoffsetValue){
+          nav.addClass('fixed')
+        } else {
+          nav.removeClass
         }
       })
-    </script>
+
+      </script>
   </body>
 </html>
